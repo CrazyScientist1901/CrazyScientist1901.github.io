@@ -1,1 +1,202 @@
+/* Custom CSS for Food, LLC - Module 3 Solution */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #777;
+    padding-left: 15px;
+}
+
+.navbar-brand:hover {
+    color: #5e5e5e;
+}
+
+.navbar-toggle {
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+/* Mobile Menu Styles */
+#navbar-collapse-1 {
+    padding: 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+}
+
+.navbar-nav {
+    margin: 0;
+    width: 100%;
+}
+
+.navbar-nav > li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav > li:last-child {
+    border-bottom: none;
+}
+
+.navbar-nav > li > a {
+    text-align: center;
+    color: #777;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+/* Page Heading */
+h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 20px 0 30px;
+    color: #333;
+}
+
+/* Main Content Area */
+.menu-tall-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    min-height: 1000px;
+    position: relative;
+}
+
+.menu-item h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.menu-item p:last-child {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    font-style: italic;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.menu-item p:last-child a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.menu-item p:last-child a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Grid Layout */
+/* Extra small devices (phones, less than 768px) - 1 column */
+@media (max-width: 767px) {
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) - 2 columns for chicken & beef, sushi full width */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-6 {
+        width: 50%;
+    }
+    
+    .col-sm-12 {
+        width: 100%;
+    }
+    
+    .menu-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) - 3 columns */
+@media (min-width: 992px) {
+    .col-md-4 {
+        width: 33.33333333%;
+    }
+    
+    .menu-item {
+        margin-bottom: 0;
+    }
+}
+
+/* Hide mobile menu on desktop and tablet */
+@media (min-width: 768px) {
+    .visible-xs {
+        display: none !important;
+    }
+    
+    .navbar-header {
+        float: left;
+    }
+    
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* Container fluid for full width */
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Make sure content is scrollable */
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-y: auto;
+}
